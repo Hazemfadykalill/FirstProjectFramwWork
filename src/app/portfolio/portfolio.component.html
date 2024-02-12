@@ -1,0 +1,34 @@
+<section class="portfolio  my-5">
+    <div class="tittle text-center mt-4 ">
+        <h1>PORTFOLIO COMPONENT</h1>
+    </div>
+    <div class="iconStar d-flex justify-content-center align-items-center mb-4 ">
+        <div class="line"></div>
+        <i class="fa-solid fa-star "></i>
+        <div class="line "></div>
+
+    </div>
+    <div class="container mt-2">
+        <div class="row g-4">
+            <div class="col-lg-4 " *ngFor="let items of arr ;index as index ">
+                <div class="img border-1 rounded-4 overflow-hidden">
+                    <img [src]="items" class="w-100" height="250px" alt="">
+                    <div (click)="getIndex(index)" class="caption d-flex justify-content-center align-items-center">
+                        <i class=" fa-solid  fa-plus"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div (click)="toHideImage($event)" class="disImages d-flex justify-content-center align-items-center"
+        *ngIf="disImage">
+        <div class=" container w-50 m-auto image ">
+            <img [src]="image" class="w-100" alt="">
+        </div>
+
+
+    </div>
+
+
+</section>

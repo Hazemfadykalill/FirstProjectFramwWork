@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.linkActive{
+    color: white;;
+    background-color: #1abc9c;
+    border-radius: 5px;
+    
+}
+h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}

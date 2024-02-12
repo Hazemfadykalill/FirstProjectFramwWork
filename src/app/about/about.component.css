@@ -1,0 +1,16 @@
+.about{
+    background-color:#1abc9c ;
+    color: white;
+    
+}
+p{
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 18px;
+}
+.line{
+    background-color: white;
+    height: 4px;
+    width: 80px; 
+    margin:0 10px ;
+}

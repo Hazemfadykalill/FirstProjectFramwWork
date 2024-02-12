@@ -1,0 +1,57 @@
+<section class="contact vh-100   my-5">
+    <div class="container  w-50 m-auto">
+        <div class="tittle text-center mt-4">
+            <h1>contact component</h1>
+            <div class="iconStar d-flex justify-content-center align-items-center ">
+                <div class="line"></div>
+                <i class="fa-solid fa-star  position-relative"></i>
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+        <div class="inputs ">
+            
+            <div class="inputLabel">
+                <h6 [ngClass]="userName.length>0?'topp':'top-0'">UserName :</h6>
+
+
+                <input type="text" placeholder="UserName" id="UserName" [(ngModel)]="userName">
+
+            </div>
+            <div class="inputLabel">
+                <h6 [ngClass]="userAge.length>0?'topp':'top-0'">userAge :</h6>
+
+
+                <input type="text" placeholder="userAge" id="userAge" [(ngModel)]="userAge">
+
+            </div>
+            <div class="inputLabel">
+                <h6 [ngClass]="userEmail.length>0?'topp':'top-0'">userEmail :</h6>
+
+
+                <input type="text" placeholder="userEmail" id="userEmail" [(ngModel)]="userEmail">
+
+            </div>
+
+            <div class="inputLabel">
+                <h6 [ngClass]="userPassword.length>0?'topp':'top-0'">userEmail :</h6>
+
+
+                <input type="text" placeholder="userPassword" id="userPassword" [(ngModel)]="userPassword">
+
+            </div>
+        
+            
+            <button class="btnMessage text-capitalize ">send Message</button>
+
+
+
+
+        </div>
+        
+
+
+    </div>
+
+</section>
